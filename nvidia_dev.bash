@@ -1,8 +1,10 @@
 #!/bin/bash
 
+sudo systemctl stop dcos-mesos-slave.service
+sudo rm -f /var/lib/mesos/slave/meta/slaves/latest
 sh /tools/NVIDIA-Linux-x86_64-375.20.run -a -s
 nvidia-smi
-sudo systemctl restart kubelet.service
+sudo systemctl start dcos-mesos-slave.service
 
 /sbin/modprobe nvidia
 
