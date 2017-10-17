@@ -8,5 +8,5 @@
 
 
 ```
-sh ./driver_intall.sh
+sudo wget https://raw.githubusercontent.com/julienstroheker/acs-dcos-gpu/master/driver_install.sh && sudo chmod +x driver_install.sh && sudo ./driver_install.sh
 ```
