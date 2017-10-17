@@ -4,3 +4,9 @@
 2. __Installing NVIDIA drivers on all nodes__
 3. __Creating a Pod__
 4. __Limitations__
+
+
+
+```
+sh ./driver_intall.sh
+```
